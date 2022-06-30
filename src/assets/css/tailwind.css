@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+html.dark {
+    color-scheme: dark
+}
+
+html,
+body {
+    font-family: Roboto, sans-serif
+}

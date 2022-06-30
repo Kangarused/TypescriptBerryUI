@@ -1,0 +1,155 @@
+// common
+$black: #222;
+$white: #eee;
+
+// paper & background
+$darkBackground: #111936;
+$darkContent: #1a223f;
+$darkContentContrast: #212f61;
+$darkPaper: #29314f;
+$darkCard: #212946;
+
+// text
+$darkTextLogo: #eee;
+$darkTextDefault: #d7dcec;
+$darkTextPrimary: #bdc8f0;
+$darkTextSecondary: #8492c4;
+$darkTextHint: #f5f5f5;
+
+// menu
+$darkMenuBackground: #002d54;
+$darkMenuContrast: #43b1ff;
+
+// default dark
+$defaultLight: #d7dcec;
+$defaultMain: #98aae9;
+$defaultDark: #7f92d6;
+$defaultContrast: #1d1d1d;
+
+// primary dark
+$darkPrimaryLight: #e3f2fd;
+$darkPrimaryMain: #239cff;
+$darkPrimaryDark: #1e88e5;
+$darkPrimary200: #90caf9;
+$darkPrimary800: #1565c0;
+
+// secondary dark
+$darkSecondaryLight: #ede7f6;
+$darkSecondaryMain: #b192e8;
+$darkSecondaryDark: #795fad;
+$darkSecondary200: #b39ddb;
+$darkSecondary800: #4527a0;
+
+// success
+$successLight: #b9f6ca;
+$success200: #69f0ae;
+$successMain: #00d66f;
+$successDark: #00c853;
+$successContrast: #222;
+
+// error
+$errorLight: #ef9a9a;
+$errorMain: #ff574b;
+$errorDark: #e03838;
+$errorContrast: #222;
+
+// warning
+$warningLight: #fff1e1;
+$warningMain: #ff8c4a;
+$warningDark: #f07026;
+$warningContrast: #222;
+
+// grey
+$grey50: #fafafa;
+$grey100: #f5f5f5;
+$grey200: #eeeeee;
+$grey300: #e0e0e0;
+$grey500: #9e9e9e;
+$grey600: #757575;
+$grey700: #616161;
+$grey900: #212121;
+
+// environment
+$development: #6d488b;
+$test: #af4040;
+
+// ==============================|| JAVASCRIPT ||============================== //
+
+:export {
+    // common
+    black: $black;
+    white: $white;
+
+    // paper & background
+    background: $darkBackground;
+    content: $darkContent;
+    contentContrast: $darkContentContrast;
+    paper: $darkPaper;
+    card: $darkCard;
+    divider: $darkContent;
+    dividerContrast: lighten($darkContent, 10%);
+
+    // text
+    textLogo: $darkTextLogo;
+    textDefault: $darkTextDefault;
+    textPrimary: $darkTextPrimary;
+    textSecondary: $darkTextSecondary;
+    textHint: $darkTextHint;
+
+    // menu
+    menuContrast: $darkMenuContrast;
+    menuBackground: $darkMenuBackground;
+
+    // default
+    defaultLight: $defaultLight;
+    defaultMain: $defaultMain;
+    defaultDark: $defaultDark;
+    defaultContrast: $defaultContrast;
+
+    // primary
+    primaryLight: $darkPrimaryLight;
+    primary200: $darkPrimary200;
+    primaryMain: $darkPrimaryMain;
+    primaryDark: $darkPrimaryDark;
+    primary800: $darkPrimary800;
+
+    // secondary
+    secondaryLight: $darkSecondaryLight;
+    secondary200: $darkSecondary200;
+    secondaryMain: $darkSecondaryMain;
+    secondaryDark: $darkSecondaryDark;
+    secondary800: $darkSecondary800;
+
+    // success
+    successLight: $successLight;
+    success200: $success200;
+    successMain: $successMain;
+    successDark: $successDark;
+    successContrast: $successContrast;
+
+    // error
+    errorLight: $errorLight;
+    errorMain: $errorMain;
+    errorDark: $errorDark;
+    errorContrast: $errorContrast;
+
+    // warning
+    warningLight: $warningLight;
+    warningMain: $warningMain;
+    warningDark: $warningDark;
+    warningContrast: $warningContrast;
+
+    // grey
+    grey50: $grey50;
+    grey100: $grey100;
+    grey200: $grey200;
+    grey300: $grey300;
+    grey500: $grey500;
+    grey600: $grey600;
+    grey700: $grey700;
+    grey900: $grey900;
+
+    // environment
+    development: $development;
+    test: $test;
+}

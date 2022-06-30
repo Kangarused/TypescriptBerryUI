@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>%VITE_APP_TITLE%</title>
+
+    <!-- show a simple loading animation until the system is ready for first render -->
+    <style>
+        .dark #loader {
+            background: #111936;
+        }
+
+        #loader {
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background: #fff;
+            z-index: 1201
+        }
+
+        #loader.fadeout {
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+            opacity: 0
+        }
+
+        .loader {
+            margin: 0 auto;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+        }
+
+        .loader>div {
+            height: 100%;
+            width: 10px;
+            display: block;
+            float: left;
+            margin-left: 2px;
+            -webkit-animation: siteLoaderdelay 2s infinite ease-in-out;
+            animation: siteLoaderdelay 2s infinite ease-in-out;
+        }
+
+        .loader .bar1 {
+            background-color: #754fa0;
+        }
+
+        .loader .bar2 {
+            background-color: #09b7bf;
+            -webkit-animation-delay: -1.9s;
+            animation-delay: -1.9s;
+        }
+
+        .loader .bar3 {
+            background-color: #90d36b;
+            -webkit-animation-delay: -1.8s;
+            animation-delay: -1.8s;
+        }
+
+        .loader .bar4 {
+            background-color: #f2d40d;
+            -webkit-animation-delay: -1.7s;
+            animation-delay: -1.7s;
+        }
+
+        .loader .bar5 {
+            background-color: #fcb12b;
+            -webkit-animation-delay: -1.6s;
+            animation-delay: -1.6s;
+        }
+
+        .loader .bar6 {
+            background-color: #ed1b72;
+            -webkit-animation-delay: -1.5s;
+            animation-delay: -1.5s;
+        }
+
+        @-webkit-keyframes siteLoaderdelay {
+
+            0%,
+            40%,
+            100% {
+                -webkit-transform: scaleY(0.05)
+            }
+
+            20% {
+                -webkit-transform: scaleY(1.0)
+            }
+        }
+
+        @keyframes siteLoaderdelay {
+
+            0%,
+            40%,
+            100% {
+                transform: scaleY(0.05);
+                -webkit-transform: scaleY(0.05);
+            }
+
+            20% {
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+        </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+        function loadTheme() {
+            let theme = localStorage.getItem("theme");
+            if (theme !== null) {
+                document.documentElement.setAttribute("data-theme", theme);
+                document.documentElement.classList.add(theme);
+            }
+        }
+        loadTheme();
+    </script>
+</body>
+
+</html>
