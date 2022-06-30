@@ -21,12 +21,12 @@ export default defineConfig(({ mode }) => ({
         ],
     },
     build: {
-        outDir: resolve(__dirname, 'dist/'),
+        outDir: resolve(__dirname, 'docs/'),
         rollupOptions: {
             plugins: [
                 //babel(),
                 visualizer({
-                    filename: resolve(__dirname, 'dist/stats.html'),
+                    filename: resolve(__dirname, 'docs/stats.html'),
                     template: 'treemap', // sunburst|treemap|network
                     gzipSize: true,
                     brotliSize: true,
